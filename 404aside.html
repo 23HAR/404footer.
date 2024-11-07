@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking google font link for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+    
+    <style>
+        body{
+            background: #d2d2d2;
+            min-height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+        }
+        .sidebar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 85px;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background: #161a2d;
+            padding: 25px 20px;
+            transition: all 0.4 ease;
+        }
+        .sidebar:hover{
+            width: 260px;
+        }
+        .sidebar-header img {
+            width: 50px;
+            border-radius: 50%;
+
+        }
+        .sidebar-header{
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-header h2{
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: white;
+            margin-left: 23px;
+        }
+        .sidebar-links h4{
+            color: white;
+            font-weight: 600;
+            margin: 10px 0;
+            white-space: nowrap;
+        }
+        .sidebar-links h4 span{
+            opacity: 0;
+        }
+        .sidebar:hover .sidebar-links h4 span{
+            opacity: 1;
+        }
+        .sidebar-links{
+            list-style: none;
+            margin-top: 20px;
+            height: 80%;
+            overflow-y: auto;
+        }
+        .sidebar-links li a{
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+            color: wheat;
+            font-weight: 500;
+            padding: 15px 10px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .sidebar-links li a:hover{
+            background: gray;
+            color: white;
+            border-radius: 10px;
+        }
+        .user-account{
+            margin-top: auto;
+            padding: 12px 10px;
+            margin-left: -10px;
+        }
+        .user-account .user-profile{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .user-profile img{
+            width: 42px;
+            border-radius: 50%;
+        }
+        .user-details{
+            color: wheat;
+            margin-left: 23px;
+            white-space: nowrap;
+        }
+        .user-details h3{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .user-profile span{
+            font-size: 0.775rem;
+            font-weight: 500;
+            display: block;
+            margin: 0;
+        }
+        .sidebar:hover .user-account{
+            background: gray;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/404logo.webp" alt="logo">
+            <h2>Browse by</h2>
+        </div>
+        <ul class="sidebar-links">
+            <h4>Home Page</h4>
+            <li>
+                <a href="#">
+                Home</a>
+            </li>
+            <li>
+                <a href="#">
+                All Products</a>
+            </li>
+            <li>
+                <a href="#">
+                Accessories</a>
+            </li>
+            <li>
+                <a href="#">
+                Best Sellers</a>
+            </li>
+            <li>
+                <a href="#">
+                Controllers</a>
+            </li>
+            <li>
+                <a href="#">
+                Games</a>
+            </li>
+                
+            </li>
+            <h4>
+                <span>Account</span>
+            </h4>
+            <li>
+                <a href="http://127.0.0.1:5500/HTML/profile.html">
+                <span class="material-symbols-outlined">
+                    account_circle
+                    </span>Profile</a>
+            </li>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        logout
+                        </span>Logout</a>
+            </li>
+        </ul>
+        <div class="user-account">
+            <div class="user-profile">
+                <img src="../images/404logo.webp" alt="logo">
+                <div class="user-details">
+                    <h3>404Error</h3>
+                    <span>Our web </span>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>
